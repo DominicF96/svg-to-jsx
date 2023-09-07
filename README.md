@@ -17,9 +17,9 @@
 Get started by cloning the repository and running the `init` command which will created the required `input` and `output` folders as well as setup a default `svgtojsx.config.js` file (view [Configurations](#configurations) for more information).
 
 ```shell
-git clone git@github.com:DominicF96/svg-to-jsx.git \
-cd svg-to-jsx \
-npm install \
+git clone git@github.com:DominicF96/svg-to-jsx.git
+cd svg-to-jsx
+npm install
 npm run init
 ```
 
