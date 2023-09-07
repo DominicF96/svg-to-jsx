@@ -2,15 +2,14 @@
 
 <div style="display: flex; justify-content: center"><img src="./banner.png" style="margin: 16px; max-width: 500px"></div>
 
+
 <div style="text-align: center; margin-bottom: 16px;">Convert SVGs to Dynamic TSX React Components</div>
 
-✅ JSX props (`stroke-width` to `strokeWidth`, `stroke-linecap` to `strokeLinecap`, etc.)
 
-✅ Dynamic attributes (`size`, `color`, `stroke`, `strokeWidth`, etc.)
-
-✅ Added standard props (`className`, `style`, etc.)
-
-🕑 Prettier formatting
+- ✅ JSX props (`stroke-width` to `strokeWidth`, `stroke-linecap` to `strokeLinecap`, etc.)
+- ✅ Dynamic attributes (`size`, `color`, `stroke`, `strokeWidth`, etc.)
+- ✅ Added standard props (`className`, `style`, etc.)
+- ✅ Prettier formatting
 
 ## Getting Started
 
