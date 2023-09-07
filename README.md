@@ -11,9 +11,21 @@
 - ✅ JSX props (`stroke-width` to `strokeWidth`, `stroke-linecap` to `strokeLinecap`, etc.)
 - ✅ Dynamic attributes (`size`, `color`, `stroke`, `strokeWidth`, etc.)
 - ✅ Added standard props (`className`, `style`, etc.)
+- ✅ Icon map
 - ✅ Prettier formatting
 
 > **_NOTE:_**  [svgr](https://react-svgr.com/) is a great alternative to this tool, and it's more flexible. I built this tool because I needed a more opinionated tool that would generate the icons in a specific way.
+
+## Designing a Uniform Iconset
+
+To begin, we need a uniform, professional iconset. Here are some considerations when designing your icons;
+
+- Consistent frame (`32px`, `2px` padding)
+- Consistent icon size (you'll likely have horizontal and vertical icons, stick with `28x20` and `20x28`)
+- Consistent style, use simple shapes
+- Test the icons at different scales and use grids
+
+Since those icons are meant to be used in software products, we'll also need a way to catalog them so they are easily searched and used, see `Icon.map.ts`.
 
 ## Getting Started
 
@@ -28,6 +40,8 @@ npm run init
 
 Once your project is initialized, you can start adding your SVGs to the `input` folder. Your icon SVGs should be named as such; `snake_case_component_name-icon_category.svg`.
 
+> **_NOTE:_** If the provided `category` is not found in the config file, the icon will be placed in the `misc` category, regardless of the provided category.
+
 Then, run the `start` command to generate the dynamic JSX React components.
 
 ```shell
@@ -39,6 +53,13 @@ This will start the conversion of your SVGs into dynamic JSX React components. T
 The tool also generates an `Icon.map.ts` file which contains a map of all the generated components and their categories. This file is used as a dictionary of icons, to facilitate showing the icons in Storybook or any other alternative.
 
 The resulting icons can be used in combination with the provided `component/Icon` component, which is a wrapper around the generated icons.
+
+### Unsupported Attributes
+
+Some attributes are yet to be supported with SVGtoJSX, having SVGs with those attributes will cause warnings and need manual fixes.
+
+- SVGtoJSX is meant to work with outline icons, not filled ones. The SVGs shouldn't use `fill` but `stroke` and `strokeWidth` instead
+- SVG shouldn't use `style`, but if it's required, the JSX will have to be adjusted manually
 
 ## Configurations
 
@@ -72,23 +93,6 @@ module.export = {
   },
 };
 ```
-
-## Designing a Uniform Iconset
-
-Here are some guidelines explaining how we build uniform, professional iconsets.
-We start with the assumption that we'll need to display the iconset in a way that's easy to navigate and search through.
-
-Any icon that does not meet these requirements will throw a warning/error.
-
-**Errors (Requirements)**
-
-- SVG file name should be formatted as follows: `{snake_case_icon_id}-{category}.svg`
-
-**Warnings**
-- SVG shouldn't use `fill`, instead use `stroke` and `strokeWidth`
-- SVG shouldn't use `style`, but if it's required, the JSX will have to be adjusted manually
-
-**Note:** If the provided `category` is not found in the config file, the icon will be placed in the `misc` category, regardless of the provided category.
 
 ## Contributions
 
