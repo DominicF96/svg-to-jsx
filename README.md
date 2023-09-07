@@ -1,11 +1,15 @@
 # SVG-TO-JSX
 
-<div style="display: flex; justify-content: center"><img src="./banner.png" style="margin: 16px; max-width: 500px"></div>
+<p align="center">
+  <img src="./banner.png"/>
+</p>
 
 
 > **_NOTE:_**  [svgr](https://react-svgr.com/) is a great alternative to this tool, and it's more flexible. I built this tool because I needed a more opinionated tool that would generate the icons in a specific way.
 
-_Convert SVGs to Dynamic TSX React Components_
+<p align="center">
+  <i><b>Convert SVGs to Dynamic TSX React Components</b></i>
+</p>
 
 - ✅ JSX props (`stroke-width` to `strokeWidth`, `stroke-linecap` to `strokeLinecap`, etc.)
 - ✅ Dynamic attributes (`size`, `color`, `stroke`, `strokeWidth`, etc.)
