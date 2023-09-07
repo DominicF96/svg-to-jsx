@@ -1,0 +1,31 @@
+{
+  "name": "svgtojsx",
+  "version": "1.0.0",
+  "description": "Convert SVGs to Dynamic TSX React Components",
+  "author": "Dominic Fournier <me@dominicfournier@outlook.com>",
+  "license": "MIT",
+  "main": "input.js",
+  "scripts": {
+    "init": "node ./init",
+    "start": "node ./index"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DominicF96/svg-to-jsx.git"
+  },
+  "keywords": [
+    "svg",
+    "to",
+    "jsx",
+    "react",
+    "dynamic",
+    "converter"
+  ],
+  "bugs": {
+    "url": "https://github.com/DominicF96/svg-to-jsx/issues"
+  },
+  "homepage": "https://github.com/DominicF96/svg-to-jsx#readme"
+}
