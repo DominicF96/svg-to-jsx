@@ -3,13 +3,15 @@
 <div style="display: flex; justify-content: center"><img src="./banner.png" style="margin: 16px; max-width: 500px"></div>
 
 
-<div style="text-align: center; margin-bottom: 16px;">Convert SVGs to Dynamic TSX React Components</div>
+_Convert SVGs to Dynamic TSX React Components_
 
 
 - ✅ JSX props (`stroke-width` to `strokeWidth`, `stroke-linecap` to `strokeLinecap`, etc.)
 - ✅ Dynamic attributes (`size`, `color`, `stroke`, `strokeWidth`, etc.)
 - ✅ Added standard props (`className`, `style`, etc.)
 - ✅ Prettier formatting
+
+> **_NOTE:_**  [svgr](https://react-svgr.com/) is a great alternative to this tool, and it's more flexible. I built this tool because I needed a more opinionated tool that would generate the icons in a specific way.
 
 ## Getting Started
 
@@ -89,7 +91,3 @@ Any icon that does not meet these requirements will throw a warning/error.
 ## Contributions
 
 Contributions are welcome! Please open an issue or submit a pull request.
-
-## Alternatives
-
-- [svgr](https://react-svgr.com/)
