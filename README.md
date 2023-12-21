@@ -14,7 +14,7 @@
 - ✅ Icon map
 - ✅ Prettier formatting
 
-> **_NOTE:_**  [svgr](https://react-svgr.com/) is a great alternative to this tool, and it's more flexible. I built this tool because I needed a more opinionated tool that would generate the icons in a specific way.
+> **_NOTE:_**  [svgr](https://react-svgr.com/) is a great alternative to this tool, and it's more flexible. I built this tool before knowing its existence 😅.
 
 ## Designing a Uniform Iconset
 
